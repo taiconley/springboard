@@ -1,0 +1,1 @@
+Regex Notes: https://speakerdeck.com/pycon2017/al-sweigart-yes-its-time-to-learn-regular-expressions
