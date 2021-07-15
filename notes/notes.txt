@@ -1,1 +1,4 @@
 Regex Notes: https://speakerdeck.com/pycon2017/al-sweigart-yes-its-time-to-learn-regular-expressions
+Scaling: https://pub.towardsai.net/how-when-and-why-should-you-normalize-standardize-rescale-your-data-3f083def38ff
+Missing Data: https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html
+Imbalanced Data: https://www.springboard.com/workshops/ai-machine-learning-career-track/learn#/curriculum/17811/17813
