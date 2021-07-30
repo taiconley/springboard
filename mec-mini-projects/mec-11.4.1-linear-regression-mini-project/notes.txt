@@ -1,0 +1,133 @@
+Virtual Environment:
+
+to download:
+sudo apt-get install python3-venv
+
+to make new environment:
+python3 -m venv env
+python3.8 -m venv env
+
+to activate environment:
+source env/bin/activate
+
+to leave environment:
+deactivate
+
+DBeaver is the GUI database
+
+To make interactive session:
+python3 -i file.py
+
+
+GitHub:
+New Project:
+1) make venv
+2) git init
+3) write some code
+4) make new repo on github.com
+5) make .gitignore file in repo
+6) add 'env' immediately to .gitignore
+7) git remote add origin https://github.com/username/reponame.git
+8) commit and push with vs code
+9) pip3 install packages
+10) pip3 freeze > requirements.txt
+
+
+When i need to use requirements.txt:
+pip3 install -r requirements.txt
+
+
+Other git init:
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/taiconley/golf.git
+git push -u origin master
+
+
+
+to make ipython virtual environment:
+1) activate virtual environment
+2) pip install ipykernel
+3) ipython kernel install --user --name=projectname
+(where projectname will become a new kernel for use)
+4) jupyter notebook
+
+
+ipython kernel install --user --name=SpringBoard
+
+postgres:
+to start postgres connection:
+$ sudo -u postgres psql
+$ psql -d databasename
+$ CREATE DATABASE dbName;
+$ DROP DATABASE dbName; 
+
+$ sudo -u postgres createuser <username>
+
+
+#show databases
+\l
+
+#show tables
+\dt
+
+to create database:
+sudo -u postgres createdb username databasename
+
+to create user:
+CREATE ROLE username WITH LOGIN SUPERUSER PASSWORD 'password';
+
+
+to view cron logs:
+grep CRON /var/log/syslog
+
+
+Airflow:
+
+make directory 'airflow' in current directory
+
+pip install --upgrade pip
+pip install apache-airflow
+
+# AIRFLOW_HOME="$(pwd)"
+export AIRFLOW_HOME="$(pwd)/airflow"
+
+
+# initialize the database
+airflow db init
+
+
+airflow users create \
+    --username admin \
+    --firstname Tai \
+    --lastname Conley \
+    --role Admin \
+    --email taiconley@gmail.com
+
+
+
+# start the web server, default port is 8080
+airflow webserver --port 8080
+
+# open a new terminal or else run webserver with ``-D`` option to run it as a daemon
+# in new terminal, ensure virtual environment is still on
+airflow scheduler
+
+# visit localhost:8080 in the browser and use the admin account you just
+
+
+
+vscode tricks:
+download python in vs code
+select lines to run and hit shift enter to just run selected lines
+make sure "format on save" is turned on in settings. 
+download code runner, change code-runner.executorMap so it includes "python":"python3"
+change settings so code-runner.runInterminal is True
+ctl alt n to run python
+
+f9 will add a break point
+f10 for next
+f11 to step into
+to move curser fn left, right, up and down 
+to move line up or down, highlight line, hit alt up or alt down
