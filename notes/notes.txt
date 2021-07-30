@@ -2,3 +2,40 @@ Regex Notes: https://speakerdeck.com/pycon2017/al-sweigart-yes-its-time-to-learn
 Scaling: https://pub.towardsai.net/how-when-and-why-should-you-normalize-standardize-rescale-your-data-3f083def38ff
 Missing Data: https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html
 Imbalanced Data: https://www.springboard.com/workshops/ai-machine-learning-career-track/learn#/curriculum/17811/17813
+
+
+Linear Regression Assumptions
+Linearity: The relationship between X and the mean of Y is linear.
+Homoscedasticity: The variance of residual is the same for any value of X.
+Independence: Observations are independent of each other.
+Normality: For any fixed value of X, Y is normally distributed.
+
+Naive Bayes:
+Classificaiton algorithm based on Bayes's Theorem which gives an assumption of independence among predictors. In simple terms, a Naive Bayes classifier assumes that the presence of a feature in a class is unrelated to the presence of any other feature
+Pros: Fast, small amount of data needed
+Cons: bad estimator
+
+K Nearest Neighbors:
+Gives a classification based on classification of other neighbors 
+
+
+Decision Tree:
+Builds classification model in a tree structure. 
+Categorical and numerical
+Simplicity to understand and visualize
+Quite unstable because a change in data can change the entire decision tree
+
+Random Forrest:
+Many decision trees, can give average of multiple trees.
+More accurate than decision tree
+Quite complex in implementation and slow in real time prediction
+
+ANN:
+Poor inte
+
+SVM:
+classifier that represents training data in poitns in space and then 
+
+Uses a subset of data, which makes it memory efficient and is good with high dimensial space
+does not give probability estimates
+

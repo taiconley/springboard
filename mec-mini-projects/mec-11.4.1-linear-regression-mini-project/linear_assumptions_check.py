@@ -1,6 +1,9 @@
 def linear_regression_assumptions(features, label, feature_names=None):
     """
     Tests a linear regression on the model to see if assumptions are being met
+    Features is a dataframe object
+    label is a dataframe object with one column
+    features_names is the same as Features
     """
     from sklearn.linear_model import LinearRegression
     import pandas as pd
