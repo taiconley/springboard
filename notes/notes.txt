@@ -10,6 +10,11 @@ Homoscedasticity: The variance of residual is the same for any value of X.
 Independence: Observations are independent of each other.
 Normality: For any fixed value of X, Y is normally distributed.
 
+
+Classificaiton Descriptions:
+https://medium.com/@vijaya.beeravalli/comparison-of-machine-learning-classification-models-for-credit-card-default-data-c3cf805c9a5a
+
+
 Naive Bayes:
 Classificaiton algorithm based on Bayes's Theorem which gives an assumption of independence among predictors. In simple terms, a Naive Bayes classifier assumes that the presence of a feature in a class is unrelated to the presence of any other feature
 Pros: Fast, small amount of data needed
@@ -39,3 +44,9 @@ classifier that represents training data in poitns in space and then
 Uses a subset of data, which makes it memory efficient and is good with high dimensial space
 does not give probability estimates
 
+Questions for today:
+Best practice to put env in gitignore?
+Common practice to do gridsearch with all classifiers?
+Review dataset
+
+Competitive Data Science in Coursera
