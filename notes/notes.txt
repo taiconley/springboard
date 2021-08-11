@@ -75,3 +75,15 @@ Looking for a quick benchmark model.  Slow in training and prediction
 
 
 Competitive Data Science in Coursera
+
+
+Questions:
+autoPyTorch there is a notion of budget and time.  What does budget mean?
+Decision Tree allows me to run when the class is not one hot encoded.  Performance was different. Why?
+Familiar with pdpbox? What do the boxes mean?
+Why is the tree so small from dTreeViz
+What data prep is needed for trees
+
+How to deal with data for bigger models.  Can you batch with sklearn or xgboost or others?
+When buying a computer, if ram is listed as 2x32, does that mean I could fit a 50gb of data in ram as a dataframe?
+Isthere an auto EDA
