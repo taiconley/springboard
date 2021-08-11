@@ -86,4 +86,5 @@ What data prep is needed for trees
 
 How to deal with data for bigger models.  Can you batch with sklearn or xgboost or others?
 When buying a computer, if ram is listed as 2x32, does that mean I could fit a 50gb of data in ram as a dataframe?
-Isthere an auto EDA
+Is there an auto EDA
+Is there any auto data cleaning (auto normalize?)
