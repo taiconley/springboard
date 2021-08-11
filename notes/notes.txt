@@ -2,6 +2,8 @@ Regex Notes: https://speakerdeck.com/pycon2017/al-sweigart-yes-its-time-to-learn
 Scaling: https://pub.towardsai.net/how-when-and-why-should-you-normalize-standardize-rescale-your-data-3f083def38ff
 Missing Data: https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html
 Imbalanced Data: https://www.springboard.com/workshops/ai-machine-learning-career-track/learn#/curriculum/17811/17813
+LinkedIn Learning Class: https://www.linkedin.com/learning/python-for-data-science-essential-training-part-2/machine-learning-rocks?u=36492188
+
 
 
 Linear Regression Assumptions
@@ -30,6 +32,16 @@ Categorical and numerical
 Simplicity to understand and visualize
 Quite unstable because a change in data can change the entire decision tree
 
+Benefits:
+Nonlinear
+Can be graphically represented
+Requires less data prep (no one hot encoding)
+
+Assumptions:
+Root note = entire training set
+Predictive featuresmust be cateogrical or binned (if continuous)
+Rows in the dataset have a recursive distribution based on the values of the attributes
+
 Random Forrest:
 Many decision trees, can give average of multiple trees.
 More accurate than decision tree
@@ -39,14 +51,27 @@ ANN:
 Poor inte
 
 SVM:
+
+Hyperparmeters to train:
+C = penalty term that dertermines how closely the model fits to the training set. Basically a regularization parameter.  Large penalty for misclassifciation in training when C is big. This gives potential for overfit. 
+As C goes to 0, it will give a large margin of error. 
+Kernel to pick from is also a Hyperparmeter 
 classifier that represents training data in poitns in space and then 
 
 Uses a subset of data, which makes it memory efficient and is good with high dimensial space
 does not give probability estimates
 
-Questions for today:
-Best practice to put env in gitignore?
-Common practice to do gridsearch with all classifiers?
-Review dataset
+When to use SVM:
+Binary target variable
+Feature to row ratio is high (short and wide data)
+Very complex relationships
+lots of outliers
+
+When not to use SVM:
+feature to row ratio is very low (SVM is slow with lots of data)
+If transparency is important
+Looking for a quick benchmark model.  Slow in training and prediction
+
+
 
 Competitive Data Science in Coursera
