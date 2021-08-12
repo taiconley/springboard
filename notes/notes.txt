@@ -74,6 +74,7 @@ Looking for a quick benchmark model.  Slow in training and prediction
 
 
 
+
 Competitive Data Science in Coursera
 
 
@@ -85,6 +86,9 @@ Why is the tree so small from dTreeViz
 What data prep is needed for trees
 
 How to deal with data for bigger models.  Can you batch with sklearn or xgboost or others?
+Incremental Learning is a way to deal with bigger data
 When buying a computer, if ram is listed as 2x32, does that mean I could fit a 50gb of data in ram as a dataframe?
 Is there an auto EDA
 Is there any auto data cleaning (auto normalize?)
+
+https://pycaret.org/ used like an automl
