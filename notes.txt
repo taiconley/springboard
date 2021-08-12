@@ -53,6 +53,10 @@ to make ipython virtual environment:
 (where projectname will become a new kernel for use)
 4) jupyter notebook
 
+(another possibility) python3 -m ipykernel install --user --name=projectname
+python -m ipykernel install --user --name=springboard
+
+
 
 ipython kernel install --user --name=SpringBoard
 
