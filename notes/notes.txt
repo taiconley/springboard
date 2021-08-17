@@ -1,3 +1,7 @@
+Courses I said I took but did not:
+
+
+
 Regex Notes: https://speakerdeck.com/pycon2017/al-sweigart-yes-its-time-to-learn-regular-expressions
 Scaling: https://pub.towardsai.net/how-when-and-why-should-you-normalize-standardize-rescale-your-data-3f083def38ff
 Missing Data: https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html
@@ -36,9 +40,11 @@ Benefits:
 Nonlinear
 Can be graphically represented
 Requires less data prep (no one hot encoding)
+Good with missing features
+you can also use the resutling tree space as features for other models (ie, the leaf space)
 
 Assumptions:
-Root note = entire training set
+Root node = entire training set
 Predictive featuresmust be cateogrical or binned (if continuous)
 Rows in the dataset have a recursive distribution based on the values of the attributes
 
@@ -46,6 +52,10 @@ Random Forrest:
 Many decision trees, can give average of multiple trees.
 More accurate than decision tree
 Quite complex in implementation and slow in real time prediction
+Bootstrapping is random sampling of data with replacement
+Bagging (Bootrap Aggregation) is performing bootstrapping many times and building an estimator for each bootstrapped dataset
+Bagging works well (averaging the estimators) because the data is selected randomly.  If there is a correlation in the data, then the average isn't as powerful
+
 
 ANN:
 Poor inte
@@ -92,3 +102,4 @@ Is there an auto EDA
 Is there any auto data cleaning (auto normalize?)
 
 https://pycaret.org/ used like an automl
+
