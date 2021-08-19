@@ -1,5 +1,5 @@
 Courses I said I took but did not:
-
+CatBoost: the New Generation of Gradient Boosting (section 13.4)
 
 
 Regex Notes: https://speakerdeck.com/pycon2017/al-sweigart-yes-its-time-to-learn-regular-expressions
@@ -7,7 +7,7 @@ Scaling: https://pub.towardsai.net/how-when-and-why-should-you-normalize-standar
 Missing Data: https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html
 Imbalanced Data: https://www.springboard.com/workshops/ai-machine-learning-career-track/learn#/curriculum/17811/17813
 LinkedIn Learning Class: https://www.linkedin.com/learning/python-for-data-science-essential-training-part-2/machine-learning-rocks?u=36492188
-
+Lecture learning series: https://bloomberg.github.io/foml/#lectures
 
 
 Linear Regression Assumptions
@@ -55,7 +55,16 @@ Quite complex in implementation and slow in real time prediction
 Bootstrapping is random sampling of data with replacement
 Bagging (Bootrap Aggregation) is performing bootstrapping many times and building an estimator for each bootstrapped dataset
 Bagging works well (averaging the estimators) because the data is selected randomly.  If there is a correlation in the data, then the average isn't as powerful
+Bagging works well on high variance, low bias models (like trees.  Linear models for example are low variance, high bias)
 
+Difference bn Random Forrest and Bagging is that a RF will reduce the amount of features it builds a tree on.  This occurs because bootstrapping from the same dataset isn't random.  By reducing the features for a tree, we create more randomness. 
+RF is highly parralizeable 
+Very little tuning required
+handle missing data
+it's a go to method. but it's slower than linear method.  faster than a big NN
+
+Stacking:
+Building an ensemble of many models. The ensemble uses learning to figure out how to combine the models together. 
 
 ANN:
 Poor inte
@@ -82,8 +91,22 @@ feature to row ratio is very low (SVM is slow with lots of data)
 If transparency is important
 Looking for a quick benchmark model.  Slow in training and prediction
 
+XGBoost:
+eXtreme Gradient Boosted treest
+each tree bosts attributes that led to misclassifications of previous tree. 
+Very good performer, easy to use and fast. 
+A good choice to start with this first. 
+Good for handling missing values
+You can plug in your own optimization function
+Allow for early stopping
+Incremental training and parallel processing
 
 
+Booster: Tree for classification, gbliner for linear
+Objective: multi: softmax, multi: softprob
+Eta: learning rate - adjust weights on each step (think of this as learning rate). lowering to .2 or lower will give better results
+Max_depth (too large and overfit, too small and bad performance)
+Min_child_weight (too high and you underfit)
 
 Competitive Data Science in Coursera
 
