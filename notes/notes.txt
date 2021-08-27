@@ -108,11 +108,81 @@ Eta: learning rate - adjust weights on each step (think of this as learning rate
 Max_depth (too large and overfit, too small and bad performance)
 Min_child_weight (too high and you underfit)
 
+Deep Learning:
+Regularization: Most common is called dropout.  Randomly set some activations to 0. 
+Another regularization technique is early stopping.  You want to stop when performance on testing data diverges from performance on training data. 
+
+Adaptive Learning: Change the learning rate based on a function.  
+
+TF 2:
+Sequential API used for building stacks
+Functional API used for buildig DAGs
+
+
+Architecture types and when to use:
+Images (Start with LeNet-like, then later on use ResNet)
+Sequences (Text or audio, start with LSTM with one hidden layer or tempooral convs, then go to Attention model or WaveNet-like model)
+Other (Start with fully connected NN with one hidden layer)
+Initialization: He et al. normal (reul), Glorot normal (tanh)
+Regularization: Start with None, then add it in later
+Data normalization: Start with None because it adds bugs. Then add in later
+
+
+3 mains parts of a CNN:
+1) convolutions - for extracting the features in the Images
+2) apply non linearity: often ReLU
+3) Pooling: Downsampling operating in each feature map
+
+RNN (Recurrent Neural Network):
+Processing sequential data
+Networks with loops in them.
+
+vanishing gradients is a problem (if you multiply a number continuously by something bn 0 and 1, it eventually goes to 0). To put it another way, it remembers more recent information
+
+To get around this, LSTM (Long Short Term Memory) is used
+1) Forget
+2) Store
+3) Update
+4) Output
+
+Key Concepts of LSTM:
+1) Maintain seperate cell state independent from what is outputted
+2) Use gates to control the flow of information
+2a) forget gate gets rid of irrelevent information
+2b) Store relevant information from current intput
+2c) Selectiely update cell state
+2d) Output gate returns a filtered version of the cell state
+3) Backprop through time with uninterrupted gradient flow
+
+RNN Applications:
+Music Generation
+Sentiment classification
+Machine translation
+Environmental Modeling
+
+
+Recommended Starting Points:
+Optimizer: Adam with learning rate 3e-4
+Activation: reul (FC and Conv Models), tanh (LSTMs)
+
+
 Competitive Data Science in Coursera
 
 
+
+
 Questions:
-autoPyTorch there is a notion of budget and time.  What does budget mean?
+Parameters for xgboost: depth and number of estimators are common Hyperparmeters
+feature importance and explainability in Random Forrest is big.  
+
+Batch Normalization - isn't it a problem if you normalize each batch with different data
+tensorboard help. Can you see live runs?
+What does an embedding table mean?
+RNN and LSTM are too confusing.  No one can understand unless they are an expert.  How to cope? what the autoML equivalent? How to use transfer learning?
+
+
+
+autoPyTorch there is a notion of budget and time.  What does budget mean? (# of epochs)
 Decision Tree allows me to run when the class is not one hot encoded.  Performance was different. Why?
 Familiar with pdpbox? What do the boxes mean?
 Why is the tree so small from dTreeViz
