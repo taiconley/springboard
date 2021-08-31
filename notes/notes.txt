@@ -166,6 +166,17 @@ Optimizer: Adam with learning rate 3e-4
 Activation: reul (FC and Conv Models), tanh (LSTMs)
 
 
+
+Generative Adversarial Networks (GANs)
+This is how fake things are created.  
+subset of unsurpervised learning
+Goal is to take input of training samples from a distribution and learn a model that represent that distribution
+one way is density estimation
+
+
+
+
+
 Competitive Data Science in Coursera
 
 
