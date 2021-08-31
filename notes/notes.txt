@@ -172,6 +172,20 @@ This is how fake things are created.
 subset of unsurpervised learning
 Goal is to take input of training samples from a distribution and learn a model that represent that distribution
 one way is density estimation
+use to debias a model (e.g given a set of faces, what does your drawn picture look like? all white? all male?)
+outlier detection
+
+Latent variable models:
+Think of Plato's Repulic, the prisoners in the cave look at the shadows.  The actual objects the prisoners don't see are latent variables
+
+
+Autoencoders:is a form of compression
+Simple gernative model, attempts to encode the input
+Encoding: unsurpervised, takes higher dimensial input and makes it lower dimensial
+Decoding: unsurpervised, takes lower dimensional input and recreates the original data
+
+GANs (creates the faces):
+2 networks, generative, and descriminative, which work against each other.  The generator builds something, and the descriminative determines if it's real or fake.  Over time, they both get better
 
 
 
@@ -187,6 +201,7 @@ Parameters for xgboost: depth and number of estimators are common Hyperparmeters
 feature importance and explainability in Random Forrest is big.  
 
 Batch Normalization - isn't it a problem if you normalize each batch with different data
+
 tensorboard help. Can you see live runs?
 What does an embedding table mean?
 RNN and LSTM are too confusing.  No one can understand unless they are an expert.  How to cope? what the autoML equivalent? How to use transfer learning?
