@@ -2,6 +2,24 @@ Courses I said I took but did not:
 CatBoost: the New Generation of Gradient Boosting (section 13.4)
 
 
+4.1: 4,5,6,7
+5.4: 2,3
+5.6: 2,3,4
+7.1: 2
+7.2: 1,2,3,4
+8.2: 3,4
+8.3: 2
+8.5: 2,3,4,5,6
+9: Everything
+11.2: 2,5
+13.2: Everything
+14.2: Everythng
+
+
+
+
+
+
 Regex Notes: https://speakerdeck.com/pycon2017/al-sweigart-yes-its-time-to-learn-regular-expressions
 Scaling: https://pub.towardsai.net/how-when-and-why-should-you-normalize-standardize-rescale-your-data-3f083def38ff
 Missing Data: https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html
