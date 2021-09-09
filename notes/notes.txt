@@ -14,6 +14,7 @@ CatBoost: the New Generation of Gradient Boosting (section 13.4)
 11.2: 2,5
 13.2: Everything
 14.2: Everythng
+16.1: 5
 
 
 
@@ -215,6 +216,18 @@ Competitive Data Science in Coursera
 
 
 Questions:
+
+best way to interpret clusters? (just lookat centroids, or something else?)
+Do you use Silhoette score, elbow method or something else to idenify k?
+    Answer - Silhouette score is standard (https://towardsdatascience.com/clustering-metrics-better-than-the-elbow-method-6926e1f723a6)
+
+PCA - to identify clusters.  But what does this really tell us?
+Other clustering algorithms? Do you use any of them?
+agglomerative clustering. 
+
+Once you have clusters for each row, then use that as a class to build random forrest, so you can get explainability.  
+
+
 
 Any practical applications for GANs?
 Explain the Buffer Size. 
