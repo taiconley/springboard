@@ -247,7 +247,7 @@ Batch Normalization - isn't it a problem if you normalize each batch with differ
 tensorboard help. Can you see live runs?
 What does an embedding table mean?
 RNN and LSTM are too confusing.  No one can understand unless they are an expert.  How to cope? what the autoML equivalent? How to use transfer learning?
-
+250
 
 
 autoPyTorch there is a notion of budget and time.  What does budget mean? (# of epochs)
