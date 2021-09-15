@@ -217,8 +217,12 @@ Competitive Data Science in Coursera
 
 
 Questions:
+If you do PCA on today's data set, store the results, then run PCA on tomorrow's data set, can you compare yesterday's PCA and today's PCA?
+How do you deal with wide datasets?
 
-best way to interpret clusters? (just lookat centroids, or something else?)
+
+best way to interpret clusters? (just look at centroids, or something else?)
+    Answer - looking at centroids isn't scientific.  You can build a random forrect to predict the cluster, and then get feature importance.
 Do you use Silhoette score, elbow method or something else to idenify k?
     Answer - Silhouette score is standard (https://towardsdatascience.com/clustering-metrics-better-than-the-elbow-method-6926e1f723a6)
 
