@@ -221,6 +221,7 @@ If you do PCA on today's data set, store the results, then run PCA on tomorrow's
 How do you deal with wide datasets?
 
 
+
 best way to interpret clusters? (just look at centroids, or something else?)
     Answer - looking at centroids isn't scientific.  You can build a random forrect to predict the cluster, and then get feature importance.
 Do you use Silhoette score, elbow method or something else to idenify k?
