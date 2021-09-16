@@ -1,7 +1,7 @@
 Courses I said I took but did not:
 CatBoost: the New Generation of Gradient Boosting (section 13.4)
 
-
+3.2: 6
 4.1: 4,5,6,7
 5.4: 2,3
 5.6: 2,3,4
@@ -16,6 +16,7 @@ CatBoost: the New Generation of Gradient Boosting (section 13.4)
 14.2: Everythng
 15: Everything
 16.1: 5
+16.2: 3,4,7,9
 
 
 
