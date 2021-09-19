@@ -208,8 +208,13 @@ Decoding: unsurpervised, takes lower dimensional input and recreates the origina
 GANs (creates the faces):
 2 networks, generative, and descriminative, which work against each other.  The generator builds something, and the descriminative determines if it's real or fake.  Over time, they both get better
 
+Content based filtering: figure out similarities about the content (movies, songs, etc). Recommend new content that is similar to others.
+Collaborative Filtering: Figure out similarities based on people's preferences.  Recommend simmilar content based on other people's reactions (could be likes, scores, wathes)
+Neighborhood of a user: Users that are similar to user x.
+Notion of similarity across users
+Pearson Correlation is the same thing as centered cosine similiarty (when you take a users score and remove the average score for each user.  This centers it as zero) 
 
-
+Item to item filtering outputers user to user filtering. 
 
 
 Competitive Data Science in Coursera
@@ -218,6 +223,9 @@ Competitive Data Science in Coursera
 
 
 Questions:
+Isn't collaborative filtering similar to KNN? Wouldn't you expect to get similar results
+
+
 If you do PCA on today's data set, store the results, then run PCA on tomorrow's data set, can you compare yesterday's PCA and today's PCA?
 How do you deal with wide datasets?
 
