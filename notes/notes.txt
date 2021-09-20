@@ -17,6 +17,7 @@ CatBoost: the New Generation of Gradient Boosting (section 13.4)
 15: Everything
 16.1: 5
 16.2: 3,4,7,9
+17.2: Everything
 
 
 
