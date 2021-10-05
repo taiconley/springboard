@@ -226,9 +226,14 @@ Competitive Data Science in Coursera
 Questions:
 Isn't collaborative filtering similar to KNN? Wouldn't you expect to get similar results
 
+standard approach to measuring performance of a recommender: Is it Mean Average Precision @k and Mean Average Recall @k?
+
+
 
 If you do PCA on today's data set, store the results, then run PCA on tomorrow's data set, can you compare yesterday's PCA and today's PCA?
 How do you deal with wide datasets?
+
+
 
 
 
