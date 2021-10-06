@@ -256,7 +256,20 @@ Are embedding layers used independently?
 What are checkpoints? How often does a checkpoint get created
 How does SGD work? If you look at one example, calculate loss, change the network weights, then the next example can be totally different in the hyper plane.  It seems impossible noisy
 
- 
+ Time Series:
+ Auto Regressive: Perform regression on previous time period.  For example, today's price is a regression of yesterday's.  
+ Integrated: Taking the difference between t and t-1, and then performing a regression on that instead. 
+ Moving Average: fitting line equation of the errors.  
+
+Arima has 3 parameters:
+p = AutoRegressive (can be between 0 to 2)
+d = Integrated
+q = Moving Average
+
+
+Autocorrelation: similarity between observations as a function of the time lag between them. 
+
+AIC = lower means the model is better
 
 
 Parameters for xgboost: depth and number of estimators are common Hyperparmeters
@@ -284,5 +297,6 @@ Is there any auto data cleaning (auto normalize?)
 
 https://pycaret.org/ used like an automl
 
-new line
+git reset --hard origin
+
 
