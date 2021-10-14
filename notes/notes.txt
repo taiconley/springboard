@@ -297,6 +297,7 @@ Is there any auto data cleaning (auto normalize?)
 
 https://pycaret.org/ used like an automl
 
+udpate
 git reset --hard origin
 
 
