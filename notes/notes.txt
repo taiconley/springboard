@@ -259,7 +259,7 @@ How does SGD work? If you look at one example, calculate loss, change the networ
  Time Series:
  Auto Regressive: Perform regression on previous time period.  For example, today's price is a regression of yesterday's.  
  Integrated: Taking the difference between t and t-1, and then performing a regression on that instead. 
- Moving Average: fitting line equation of the errors.  
+ Moving Average: fitting line equation of the errors.  Explain this in more detail??
 
 Arima has 3 parameters:
 p = AutoRegressive (can be between 0 to 2)
@@ -270,6 +270,26 @@ q = Moving Average
 Autocorrelation: similarity between observations as a function of the time lag between them. 
 
 AIC = lower means the model is better
+
+
+
+
+
+Questions:
+In ARIMA, explain MA in more detail.  It is fitting the errors.  So explain ARIMA.  Fit the errors of the difference between different times against itself?
+
+https://towardsdatascience.com/3-facts-about-time-series-forecasting-that-surprise-experienced-machine-learning-practitioners-69c18ee89387
+What is ARIMA(1,1,1)(1,1,2). What does it mean to have BOTH options
+
+Do you use AIC or BIC as a starting point?5
+
+I don't understand the ACF and PACF charts.  It says that 5 days is special so should be the p, I don't understand why
+
+
+
+
+
+
 
 
 Parameters for xgboost: depth and number of estimators are common Hyperparmeters
