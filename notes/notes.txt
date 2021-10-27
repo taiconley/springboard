@@ -286,6 +286,7 @@ Do you use AIC or BIC as a starting point?5
 I don't understand the ACF and PACF charts.  It says that 5 days is special so should be the p, I don't understand why
 
 
+Do you use fast.ai
 
 
 
