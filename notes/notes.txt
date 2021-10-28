@@ -279,7 +279,17 @@ Questions:
 In ARIMA, explain MA in more detail.  It is fitting the errors.  So explain ARIMA.  Fit the errors of the difference between different times against itself?
 
 https://towardsdatascience.com/3-facts-about-time-series-forecasting-that-surprise-experienced-machine-learning-practitioners-69c18ee89387
-What is ARIMA(1,1,1)(1,1,2). What does it mean to have BOTH options
+What is ARIMA(1,    1,1)(1,1,2). What does it mean to have BOTH options
+First part 
+
+Read 8.9 - https://otexts.com/fpp2/arima.html
+first part is seasonal, next part is non seasonal
+
+
+LSTM doesn't require stationarity
+
+
+
 
 Do you use AIC or BIC as a starting point?5
 
