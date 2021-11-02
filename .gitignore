@@ -1,6 +1,7 @@
 /env
 mec-mini-projects/credentials.py
 /data
+/Final_Project/data
 test.py
 credentials.py
 mec-mini-projects/mec-6.4.1.data-wrangling-at-scale-with-spark/output
