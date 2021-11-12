@@ -293,19 +293,6 @@ Do you use AIC or BIC as a starting point?5
 
 I don't understand the ACF and PACF charts.  It says that 5 days is special so should be the p, I don't understand why
 
-Do you use fast.ai
-
-What is your coding style?
-Unit Testing?
-Jupyter or IDE?
-Docker?
-CICD
-Production and Developmemnt Environments
-
-
-
-
-
 Parameters for xgboost: depth and number of estimators are common Hyperparmeters
 feature importance and explainability in Random Forrest is big.  
 
@@ -332,5 +319,109 @@ Is there any auto data cleaning (auto normalize?)
 https://pycaret.org/ used like an automl
 
 git reset --hard origin
+
+Do you use fast.ai
+
+What is your coding style?
+Unit Testing?
+Jupyter or IDE?
+Docker?
+CICD - explain this to me
+Production and Developmemnt Environments
+What is required for production code?
+How do you test?
+What is functional programming
+How do you keep Dev, Test, and Production systems idential, across OSs.  Docker or something else?
+How do you use environment variables
+
+Docker Compose: how to compose several docker images together
+using virtual environment inside of docker?
+what is a port?
+what is python logger. where do logs go to?
+
+Do you use Streamlit
+
+Docker: 
+
+Dockerfile:
+FROM google/cloud-sdk:latest
+
+LABEL maintainer="taiconley@gmail.com"
+
+WORKDIR /app
+
+EXPOSE 8888
+
+VOLUME .
+
+Then to build it:
+$ docker build -t taiconley/final_project . 
+
+Then to initialize container:
+$ docker run -p 9999:8888 -v /Users/taiconley/Desktop/Cloud/Projects/springboard_final:/app taiconley/final_project
+
+First part after -v is the path I want to mount. Then a "Space" then taiconley/final_project is name of image
+
+
+
+When I want to save an image: (although a Dockerfile and docker build is preferred)
+1) $ docker ps (this command gives a list of everything.  Grab the CONTAINER ID)
+2) $ docker commit "CONTAINER ID" "IMAGE":"TAG. For example, docker commit eef3561eeb4f jupyter:version2
+
+$ docker build -t "NAME" .
+$ docker build -t jupyter .
+
+
+
+When I want to run a jupyter notebook:
+$ docker run -p 9999:8888 -d -v /Users/taiconley/Desktop/Projects/dockerTest:/app jupyter (assumming an image called jupyter)
+$ docker run -p 9999:8888 jupyter
+
+************************************
+
+FROM python:3.8.3-slim
+
+LABEL maintainer="taiconley@gmail.com"
+
+WORKDIR /app
+
+COPY . /app
+
+RUN pip --no-cache-dir install numpy pandas seaborn sklearn jupyter
+
+EXPOSE 8888
+
+# Run app.py when the container launches
+CMD ["jupyter", "notebook", "--ip='*'", "--port=8888", "--no-browser", "--allow-root"]
+
+$ docker run -p 9999:8888 jupyter
+
+
+
+
+
+**************************************
+Dockerfile to use directory as volume
+
+	
+
+CMD ["jupyter", "notebook", "--ip='*'", "--port=8888", "--allow-root"]
+
+(IN ORDER TO RUN THIS DOCKER, DO THIS:
+$ docker build -t jupyter .
+$ docker run -p 9999:8888 -d -v /Users/taiconley/Desktop/Projects/dockerTest:/app jupyter
+Or do it without port
+docker run -d -v /Users/taiconley/Desktop/Projects/dockerTest:/app jupyter
+)
+
+**************************************
+
+docker run -p 9999:8888 -d -v /Users/taiconley/Desktop/Cloud/Projects/springboard_final:/app taiconley/springboard_project:latest
+docker run -d -v /Users/taiconley/Desktop/Cloud/Projects/springboard_final:/app taiconley/springboard_project:latest
+docker run -v /Users/taiconley/Desktop/Cloud/Projects/springboard_final:/app taiconley/springboard_project:latest
+docker run -t -v /Users/taiconley/Desktop/Cloud/Projects/springboard_final:/app taiconley/springboard_project:latest.  ---------------------> this is the only one that works.  Otherwise, it would work when running docker desktop
+docker run -v /Users/taiconley/Desktop/Cloud/Projects/springboard_final:/app taiconley/springboard_final:latest
+
+
 
 
