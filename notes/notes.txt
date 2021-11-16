@@ -342,6 +342,7 @@ what is python logger. where do logs go to?
 Do you use Streamlit
 
 Docker: 
+https://github.com/docker-for-data-science/docker-for-data-science-tutorial
 
 Dockerfile:
 FROM google/cloud-sdk:latest
