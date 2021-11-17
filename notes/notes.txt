@@ -341,6 +341,13 @@ what is python logger. where do logs go to?
 
 Do you use Streamlit
 
+
+SparkML:
+Do you really use this?
+Are there better solutions for at scale training?
+How do you see printed objects? Often it just points to memory
+
+
 Docker: 
 https://github.com/docker-for-data-science/docker-for-data-science-tutorial
 
