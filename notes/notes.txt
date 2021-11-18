@@ -339,13 +339,16 @@ using virtual environment inside of docker?
 what is a port?
 what is python logger. where do logs go to?
 
-Do you use Streamlit
+Do you use Streamlit. Yes for simple projects. 
 
 
 SparkML:
 Do you really use this?
 Are there better solutions for at scale training?
 How do you see printed objects? Often it just points to memory
+
+TFX: 
+this is hard.  What pipeline tool do you use? Is it overkill?
 
 
 Docker: 
