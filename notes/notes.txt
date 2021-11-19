@@ -350,6 +350,11 @@ How do you see printed objects? Often it just points to memory
 TFX: 
 this is hard.  What pipeline tool do you use? Is it overkill?
 
+What is the big data processing pipeline you use?
+ie, say it's in a database, do you use spark or beam to get it into a file system for training?
+Can you use spark with standard frameworks (sklearn, pytorch, tf?)
+Dask
+
 
 Docker: 
 https://github.com/docker-for-data-science/docker-for-data-science-tutorial
