@@ -376,7 +376,7 @@ $ docker build -t taiconley/final_project .
 Then to initialize container:
 $ docker run -p 9999:8888 -v /Users/taiconley/Desktop/Cloud/Projects/springboard_final:/app taiconley/final_project
 
-First part after -v is the path I want to mount. Then a "Space" then taiconley/final_project is name of image
+First part after     -v is the path I want to mount. Then a "Space" then taiconley/final_project is name of image
 
 
 
@@ -408,7 +408,7 @@ RUN pip --no-cache-dir install numpy pandas seaborn sklearn jupyter
 EXPOSE 8888
 
 # Run app.py when the container launches
-CMD ["jupyter", "notebook", "--ip='*'", "--port=8888", "--no-browser", "--allow-root"]
+CMD ["jupyter", "notebook", "--ip='*'", "--port=8888", "--no-browser", "--allow-root"]taiconley
 
 $ docker run -p 9999:8888 jupyter
 
@@ -432,12 +432,52 @@ docker run -d -v /Users/taiconley/Desktop/Projects/dockerTest:/app jupyter
 
 **************************************
 
-docker run -p 9999:8888 -d -v /Users/taiconley/Desktop/Cloud/Projects/springboard_final:/app taiconley/springboard_project:latest
+docker run -p 9999:8888 -d -v /Users/taiconley/Desktop/Cloud/Projects/springboard_final/data:/app taiconley/springboard_project:latest
 docker run -d -v /Users/taiconley/Desktop/Cloud/Projects/springboard_final:/app taiconley/springboard_project:latest
 docker run -v /Users/taiconley/Desktop/Cloud/Projects/springboard_final:/app taiconley/springboard_project:latest
 docker run -t -v /Users/taiconley/Desktop/Cloud/Projects/springboard_final:/app taiconley/springboard_project:latest.  ---------------------> this is the only one that works.  Otherwise, it would work when running docker desktop
 docker run -v /Users/taiconley/Desktop/Cloud/Projects/springboard_final:/app taiconley/springboard_final:latest
 
+
+
+
+sudo docker run -p 9999:8888 -t -v /home/tai/Desktop/Projects/springboard_final:/app taiconley/springboard:latest
+sudo docker run -t -v /home/tai/Desktop/Projects/springboard_final:/app taiconley/springboard:latest
+
+sudo docker run -it -v /home/tai/Desktop/Projects/springboard_final:/app taiconley/springboard:latest /bin/ash
+
+docker build -t taiconley/springboard .
+
+docker run -it --rm taiconley/springboard /bin/ash (DOESN"T WORK)
+sudo docker run --rm -it --entrypoint bash taiconley/springboard (WORKS!!!)
+
+RUN executes command(s) in a new layer and creates a new image. E.g., it is often used for installing software packages.
+CMD sets default command and/or parameters, which can be overwritten from command line when docker container runs.
+ENTRYPOINT configures a container that will run as an executable.
+
+sudo docker build -t taiconley/springboard . (WORKS)
+sudo docker run --rm -it --entrypoint bash taiconley/springboard (WORKS!!!) to get command line without mounting
+sudo docker run --rm -it -v /home/tai/Desktop/Projects/datalocation:/app --entrypoint bash taiconley/springboard (WORKS) This is to mount a separate directory
+sudo docker run --rm -it -v /home/tai/Desktop/Projects/springboard_final:/app --entrypoint bash taiconley/springboard (WORKS) this is to mount the same directory that's been copied.  this lets us edit the files and data
+sudo docker run -p 9999:8888 -t -v /home/tai/Desktop/Projects/springboard_final:/app taiconley/springboard:latest (WORKS) to run jupyter notebook.  you need to change the entry point in CMD dockerfile
+
+
+If the container is already running:
+docker exec -it determined_blackwell /bin/bash (WORKS. determined_blackwell is the container name). this will let me get into the terminal
+docker exec -it festive_burnell /bin/bash
+
+
+
+sudo docker run -d -p 5000:5000 taiconley/springboard
+
+how do I make this externally available?
+what is common in terms of what the page looks like?
+what about security?
+
+engine x and gunicorn production with flask
+https://faun.pub/deploy-flask-app-with-nginx-using-gunicorn-7fda4f50066a
+
+github actions or travis
 
 
 

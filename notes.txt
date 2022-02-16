@@ -54,11 +54,24 @@ to make ipython virtual environment:
 4) jupyter notebook
 
 (another possibility) python3 -m ipykernel install --user --name=projectname
+python3 -m ipykernel install --user --name=springboard
+
 python -m ipykernel install --user --name=springboard
 
 
-
+python3 -m ipykernel install --user --name=springboard
 ipython kernel install --user --name=SpringBoard
+
+jupyter kernelspec list
+jupyter kernelspec uninstall unwanted-kernel
+jupyter kernelspec uninstall springboard
+
+
+
+
+
+
+
 
 postgres:
 to start postgres connection:
